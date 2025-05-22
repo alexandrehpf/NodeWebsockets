@@ -1,6 +1,15 @@
+import 'dotenv/config';
 import { MongoClient } from "mongodb";
 
-const cliente = new MongoClient("mongodb+srv://alexandrehpf:123@alurawebsocket.7ssufvz.mongodb.net/?retryWrites=true&w=majority&appName=AluraWebSocket");
+const usuario = process.env.MONGO_USER;
+const senha = process.env.MONGO_PASS;
+const cluster = process.env.MONGO_CLUSTER;
+const dbName = process.env.MONGO_DB;
+const appName = process.env.MONGO_APPNAME;
+
+const uri = `mongodb+srv://${usuario}:${senha}@${cluster}/?retryWrites=true&w=majority&appName=${appName}`;
+
+const cliente = new MongoClient(uri);
 
 let documentosColecao;
 

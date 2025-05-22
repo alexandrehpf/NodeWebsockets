@@ -78,15 +78,9 @@ O arquivo `src/dbConnect.js` realiza a conexão com o MongoDB Atlas. Substitua a
 const cliente = new MongoClient("mongodb+srv://<usuario>:<senha>@<cluster>.mongodb.net");
 ```
 
-## 🧪 Testes
-
-Ainda não há testes automatizados definidos. (Veja o script `"test"` no `package.json`).
-
 ## 👤 Autor
 
 Desenvolvido por **Alexandre Ferraz**  
 [GitHub](https://github.com/alexandrehpf)
 
-## 📝 Licença
 
-Este projeto está licenciado sob a licença ISC. Consulte o arquivo `LICENSE` para mais detalhes.
